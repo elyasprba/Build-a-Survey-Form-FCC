@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+
+* {
+   box-sizing: border-box;
+}
+
+body::before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(90deg, rgba(80, 157, 194, 0.6) 0%, rgba(100, 105, 134, 0.6) 0%, rgba(6, 104, 129, 0.6) 34%), url('https://images.unsplash.com/photo-1593261893060-7d88ec1681dc?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NTc2OTEwNw&ixlib=rb-1.2.1&q=85');
+   z-index: -1;
+   background-size: cover;
+}
+
+body {
+   font-family: Lora, sans-serif;
+   min-height: 1000px;
+}
+
+h1,
+p {
+   text-align: center;
+   color: #ddd;
+}
+
+form {
+   color: #ddd;
+   max-width: 600px;
+   background-color: rgba(0, 20, 50, 0.6);
+   margin: 0 auto;
+   padding: 20px 40px;
+   border-radius: 7px;
+}
+
+label {
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+textarea {
+   margin-top: 5px;
+   height: 50px;
+   width: 100%;
+   border-radius: 5px;
+   border: 0;
+   padding: 15px;
+   font-family: inherit;
+}
+
+textarea {
+   height: 100px;
+}
+
+button {
+   width: 100%;
+   height: 30px;
+   border-radius: 5px;
+   border: 0;
+   background-color: #1b5e20;
+   color: #ddd;
+}

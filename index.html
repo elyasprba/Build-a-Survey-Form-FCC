@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Biodata Survey Form</title>
+   </head>
+   <body>
+      <h1 id="title">Biodata Survey From</h1>
+      <p id="description">Thank you for filling out the survey</p>
+      <form id="survey-form">
+         <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required />
+         </label>
+         <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required />
+         </label>
+         <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you?" min="15" max="40" />
+         </label>
+         <label for="dropdown" id="dropdown">
+            How do you know survey?
+            <select name="dropdown" id="">
+               <option>Instagram</option>
+               <option>Facebook</option>
+               <option>LinkedIn</option>
+               <option>Friend</option>
+               <option>Family</option>
+            </select>
+         </label>
+         <label for="gender" id="gender-label">Choose your gender?</label>
+         <input type="radio" name="gender" value="1" chacked /> Male <br />
+         <input type="radio" name="gender" value="2" chacked /> Female <br />
+         <input type="radio" name="gender" value="3" chacked /> Other <br />
+
+         <br />
+         <label for="profession" id="profession-label">Where do you work?</label>
+         <input type="checkbox" value="profession-1" />Jakarta <br />
+         <input type="checkbox" value="profession-2" />Bogor <br />
+         <input type="checkbox" value="profession-3" />Depok <br />
+         <input type="checkbox" value="profession-4" />Tangerang <br />
+         <input type="checkbox" value="profession-5" />Bekasi <br />
+         <input type="checkbox" value="profession-6" />Other <br />
+
+         <br />
+         <label for="comments" id="comments-label">
+            Any comments or suggestion?
+            <textarea id="comments" cols="30" rows="10"></textarea>
+         </label>
+
+         <button id="submit" type="submit">Submit</button>
+      </form>
+   </body>
+</html>
